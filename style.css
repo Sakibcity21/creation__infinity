@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Unbounded:wght@200..900&display=swap');
+
+:root{
+    --font-family1:Unbounded;
+    --font-family2: Manrope;
+}
+
+* {
+    font-family: var(--font-family2);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #e3d2c4, #fcfcfb);
+    height: 100%;
+    width: 100%;
+
+}
+
+.navbar{
+    background-color: transparent;    
+    padding: 2rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+.linkbtn {
+    color: black;
+    padding: 7.5px 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent !important;
+}
+
+.about{
+    width: 100%;
+    /* background-color: palegoldenrod; */
+    padding: 1rem;
+}
+
+.abouthead{
+    padding: 1rem;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+        'h1'
+        'h2'
+    ;
+}
+#head1{
+    grid-area: h1;
+    font-family: var(--font-family1);
+    /* width: 100; */
+    text-transform: uppercase;
+    font-size: 200px;
+    
+}
+#head3{
+    grid-area: h2;
+    font-family: var(--font-family1);
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 30px;
+   
+}
+.about2{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 0.5fr;
+    grid-template-areas: 
+        'a1 a2'
+    ;
+    height: 100vh;
+}
+.aboutcontent{
+    grid-area: a1;
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+.aboutimg{
+    grid-area: a2;
+    /* background-image: url("pics/logo\ 1.png"); */
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-size: cover;
+}

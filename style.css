@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-/* body {
+body {
     background: linear-gradient(to right, #e3d2c4, #fcfcfb);
     height: 100%;
     width: 100%;
@@ -56,11 +56,11 @@
 #head1{
     grid-area: h1;
     font-family: var(--font-family1);
-    /* width: 100; */
+    width: 100;
     text-transform: uppercase;
     font-size: 200px;
     
-} */
+}
 #head3{
     grid-area: h2;
     font-family: var(--font-family1);

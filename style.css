@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    color: white;
+    background-color: #151515;
+}
 body {
     background: linear-gradient(to right, #d0dae0, #e2ebf0);
     height: 100%;
